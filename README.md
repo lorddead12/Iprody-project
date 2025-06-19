@@ -16,6 +16,7 @@
 ---
 ## Конечный результат после завершения курса 
 :large_blue_diamond: **Карьерный рост:** смена текущей деятельности на java разработчика
+
 :large_blue_diamond: **Hard skills:** git, java, Spring и т.д.
 
 ---
