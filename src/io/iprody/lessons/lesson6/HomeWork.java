@@ -9,6 +9,10 @@ public class HomeWork {
         target = arrayCopy(sourceArray, target);
 
         System.out.println();
+
+        int[] sourceArray1 = {1, 2, 3, 4};
+        int[] target1 = {5, 6, 7};
+        target1 = arrayCopy(sourceArray1, target1);
     }
 
     public static int[] arrayCopy(int[] source, int[] target) {
@@ -30,6 +34,17 @@ public class HomeWork {
             copyTwoArrays[indexCopyTwoArrays] = valueSourceArray;
             indexCopyTwoArrays++;
         }
+
+        System.out.print("Массив после копирования - ");
+        System.out.println(Arrays.toString(copyTwoArrays));
+        return copyTwoArrays;
+    }
+
+    public static int[] arrayCopyV2(int[] source, int[] target) {
+        int[] copyTwoArrays = new int[source.length + target.length];
+
+        System.arraycopy(target, 0, copyTwoArrays, 0, target.length);
+        System.arraycopy(source, 0, copyTwoArrays, target.length, source.length);
 
         System.out.print("Массив после копирования - ");
         System.out.println(Arrays.toString(copyTwoArrays));
