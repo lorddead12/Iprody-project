@@ -2,6 +2,8 @@ package io.iprody.lessons.lesson8;
 
 public class HomeWorkLesson8 {
     public static void main(String[] args) {
+        GuessWord.runGuessWord();
+
         testStringWork("HoasdfpolloH");
     }
 
