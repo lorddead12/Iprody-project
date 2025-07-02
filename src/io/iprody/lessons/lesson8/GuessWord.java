@@ -37,8 +37,7 @@ class GuessWord {
         /*Метод проверки ответа пользователя*/
     private boolean checkAnswerUser(String answer) {
         int lenResponseWord =  RESPONSE_WORDS[indexWord].length();
-        int minLen =
-                Math.min(answer.length(), lenResponseWord);
+        int minLen = Math.min(answer.length(), lenResponseWord);
 
         for (int i = 0; i < minLen; i++) {
             char letterAnswer = answer.charAt(i);
