@@ -23,7 +23,18 @@ class StringWork {
     }
 
     public boolean isPalindrome(String original) {
-        String reverseOriginal = stringReverse(original);
-        return original.equalsIgnoreCase(reverseOriginal);
+        int lenOriginal = original.length() - 1;
+        original = original.toLowerCase();
+
+        for (int i = 0; i <= lenOriginal; i++) {
+            char leftCh = original.charAt(i);
+            char rightCh = original.charAt(lenOriginal - i);
+
+            if (leftCh != rightCh) {
+                return false;
+            }
+        }
+
+        return true;
     }
 }
